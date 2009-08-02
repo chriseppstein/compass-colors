@@ -5,28 +5,28 @@ module Sass::Script::Functions
   # Takes a color object and amount by which to lighten it (0 to 100).
   def lighten(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    hsl.l *= (amount.value / 100.0) + 1.0
+    hsl.l += (1 - hsl.l) * (amount.value / 100.0)
     hsl.to_color
   end
 
   # Takes a color object and amount by which to darken it (0 to 100).
   def darken(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    hsl.l *= (-amount.value / 100.0) + 1.0
+    hsl.l *= 1.0 - (amount.value / 100.0)
     hsl.to_color
   end
 
   # Saturate (make a color "richer") a color by the given amount (0 to 100)
   def saturate(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    hsl.s *= (amount.value / 100.0) + 1.0
+    hsl.s += (1 - hsl.s) * (amount.value / 100.0)
     hsl.to_color
   end
 
   # Desaturate (make a color "grayer") a color by the given amount (0 to 100)
   def desaturate(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    hsl.s *= (-amount.value / 100.0) + 1.0
+    hsl.s *= (1.0 - (amount.value / 100.0))
     hsl.to_color
   end
 
