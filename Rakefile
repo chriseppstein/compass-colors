@@ -8,7 +8,7 @@ begin
     gemspec.description = "Sass Extensions and color theme templates to make working with colors easier and more maintainable."
     gemspec.authors = ["Chris Eppstein"]
     gemspec.has_rdoc = false
-    gemspec.add_dependency('chriseppstein-compass', '>= 0.10.0')
+    gemspec.add_dependency('chriseppstein-compass', '>= 0.8.7')
     gemspec.files = []
     gemspec.files << "README.markdown"
     gemspec.files << "LICENSE.markdown"

@@ -9,7 +9,11 @@ Gem::Specification.new do |s|
   s.date = %q{2009-08-02}
   s.description = %q{Sass Extensions and color theme templates to make working with colors easier and more maintainable.}
   s.email = %q{chris@eppsteins.net}
+  s.extra_rdoc_files = [
+    "README.markdown"
+  ]
   s.files = [
+    "README.markdown",
     "Rakefile",
     "VERSION.yml",
     "example/config.rb",
@@ -22,16 +26,16 @@ Gem::Specification.new do |s|
     "lib/compass-colors/sass_extensions.rb",
     "spec/approximate_color_matching.rb",
     "spec/sass_extensions_spec.rb",
+    "templates/analogous/_theme.sass",
     "templates/analogous/manifest.rb",
-    "templates/analogous/theme.sass",
+    "templates/basic/_theme.sass",
     "templates/basic/manifest.rb",
-    "templates/basic/theme.sass",
+    "templates/complementary/_theme.sass",
     "templates/complementary/manifest.rb",
-    "templates/complementary/theme.sass",
+    "templates/split_complement/_theme.sass",
     "templates/split_complement/manifest.rb",
-    "templates/split_complement/theme.sass",
-    "templates/triadic/manifest.rb",
-    "templates/triadic/theme.sass"
+    "templates/triadic/_theme.sass",
+    "templates/triadic/manifest.rb"
   ]
   s.homepage = %q{http://compass-style.org}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -48,11 +52,11 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<chriseppstein-compass>, [">= 0.10.0"])
+      s.add_runtime_dependency(%q<chriseppstein-compass>, [">= 0.8.7"])
     else
-      s.add_dependency(%q<chriseppstein-compass>, [">= 0.10.0"])
+      s.add_dependency(%q<chriseppstein-compass>, [">= 0.8.7"])
     end
   else
-    s.add_dependency(%q<chriseppstein-compass>, [">= 0.10.0"])
+    s.add_dependency(%q<chriseppstein-compass>, [">= 0.8.7"])
   end
 end
