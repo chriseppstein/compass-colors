@@ -2,7 +2,7 @@
 // In reality, these values should be adjusted to create a more pleasant color combination.
 // There is not any mathematical formula for this, but you can use the lighten, darken,
 // saturate and desaturate functions to adjust your main colors.
-!base_color    = red
+!base_color ||= red
 !support_color = adjust_hue(!base_color, 30)
 !accent_color  = adjust_hue(!base_color, -30)
 
