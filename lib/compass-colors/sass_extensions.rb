@@ -1,5 +1,4 @@
 require 'sass'
-require 'color'
 
 module Sass::Script::Functions
   # Takes a color object and amount by which to lighten it (0 to 100).
