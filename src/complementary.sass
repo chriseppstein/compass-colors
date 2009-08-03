@@ -1,0 +1,24 @@
+@import compass/utilities.sass
+@import mixins.sass
+// We can change the theme color here by pre-setting the !base_color
+!base_color = #614DA3
+@import complementary_theme.sass
+
+html
+  :height 100%    
+
+body#complementary
+  :margin 0
+  :height 100%
+  .base, .complement
+    +clearfix
+    :height 50%
+    div
+      :height 100%
+      :float right
+      :width= (99.9% / 7) - 1%
+      :padding 4px 0.5%
+  .base
+    +gradient(!base_color, "base")
+  .complement
+    +gradient(!complementary_color, "complement")

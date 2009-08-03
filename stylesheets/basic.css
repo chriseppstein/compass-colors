@@ -1,0 +1,35 @@
+html { height: 100%; }
+
+body#basic { margin: 0; height: 100%; }
+body#basic .base { overflow: hidden; display: inline-block; height: 100%; }
+body#basic .base { display: block; }
+body#basic .base div { height: 100%; float: right; width: 13.271%; padding: 4px 0.5%; }
+body#basic .base { background-color: #181329; }
+body#basic .base .darkest { background-color: #181329; }
+body#basic .base .darkest:before, body#basic .base .darkest:after { color: #ddd; }
+body#basic .base .darkest:before { content: "#181329"; }
+body#basic .base .darkest:after { content: "darkest_base_color"; font-size: smaller; }
+body#basic .base .darker { background-color: #302652; }
+body#basic .base .darker:before, body#basic .base .darker:after { color: #ddd; }
+body#basic .base .darker:before { content: "#302652"; }
+body#basic .base .darker:after { content: "darker_base_color"; font-size: smaller; }
+body#basic .base .dark { background-color: #493a7a; }
+body#basic .base .dark:before, body#basic .base .dark:after { color: black; }
+body#basic .base .dark:before { content: "#493a7a"; }
+body#basic .base .dark:after { content: "dark_base_color"; font-size: smaller; }
+body#basic .base .normal { background-color: #614da3; }
+body#basic .base .normal:before, body#basic .base .normal:after { color: black; }
+body#basic .base .normal:before { content: "#614da3"; }
+body#basic .base .normal:after { content: "base_color"; font-size: smaller; }
+body#basic .base .light { background-color: #8675be; }
+body#basic .base .light:before, body#basic .base .light:after { color: black; }
+body#basic .base .light:before { content: "#8675be"; }
+body#basic .base .light:after { content: "light_base_color"; font-size: smaller; }
+body#basic .base .lighter { background-color: #afa3d4; }
+body#basic .base .lighter:before, body#basic .base .lighter:after { color: black; }
+body#basic .base .lighter:before { content: "#afa3d4"; }
+body#basic .base .lighter:after { content: "lighter_base_color"; font-size: smaller; }
+body#basic .base .lightest { background-color: #d7d1e9; }
+body#basic .base .lightest:before, body#basic .base .lightest:after { color: black; }
+body#basic .base .lightest:before { content: "#d7d1e9"; }
+body#basic .base .lightest:after { content: "lightest_base_color"; font-size: smaller; }

@@ -1,0 +1,64 @@
+html { height: 100%; }
+
+body#complementary { margin: 0; height: 100%; }
+body#complementary .base, body#complementary .complement { overflow: hidden; display: inline-block; height: 50%; }
+body#complementary .base, body#complementary .complement { display: block; }
+body#complementary .base div, body#complementary .complement div { height: 100%; float: right; width: 13.271%; padding: 4px 0.5%; }
+body#complementary .base { background-color: #181329; }
+body#complementary .base .darkest { background-color: #181329; }
+body#complementary .base .darkest:before, body#complementary .base .darkest:after { color: #ddd; }
+body#complementary .base .darkest:before { content: "#181329"; }
+body#complementary .base .darkest:after { content: "darkest_base_color"; font-size: smaller; }
+body#complementary .base .darker { background-color: #302652; }
+body#complementary .base .darker:before, body#complementary .base .darker:after { color: #ddd; }
+body#complementary .base .darker:before { content: "#302652"; }
+body#complementary .base .darker:after { content: "darker_base_color"; font-size: smaller; }
+body#complementary .base .dark { background-color: #493a7a; }
+body#complementary .base .dark:before, body#complementary .base .dark:after { color: black; }
+body#complementary .base .dark:before { content: "#493a7a"; }
+body#complementary .base .dark:after { content: "dark_base_color"; font-size: smaller; }
+body#complementary .base .normal { background-color: #614da3; }
+body#complementary .base .normal:before, body#complementary .base .normal:after { color: black; }
+body#complementary .base .normal:before { content: "#614da3"; }
+body#complementary .base .normal:after { content: "base_color"; font-size: smaller; }
+body#complementary .base .light { background-color: #8675be; }
+body#complementary .base .light:before, body#complementary .base .light:after { color: black; }
+body#complementary .base .light:before { content: "#8675be"; }
+body#complementary .base .light:after { content: "light_base_color"; font-size: smaller; }
+body#complementary .base .lighter { background-color: #afa3d4; }
+body#complementary .base .lighter:before, body#complementary .base .lighter:after { color: black; }
+body#complementary .base .lighter:before { content: "#afa3d4"; }
+body#complementary .base .lighter:after { content: "lighter_base_color"; font-size: smaller; }
+body#complementary .base .lightest { background-color: #d7d1e9; }
+body#complementary .base .lightest:before, body#complementary .base .lightest:after { color: black; }
+body#complementary .base .lightest:before { content: "#d7d1e9"; }
+body#complementary .base .lightest:after { content: "lightest_base_color"; font-size: smaller; }
+body#complementary .complement { background-color: #242913; }
+body#complementary .complement .darkest { background-color: #242913; }
+body#complementary .complement .darkest:before, body#complementary .complement .darkest:after { color: #ddd; }
+body#complementary .complement .darkest:before { content: "#242913"; }
+body#complementary .complement .darkest:after { content: "darkest_complement_color"; font-size: smaller; }
+body#complementary .complement .darker { background-color: #475226; }
+body#complementary .complement .darker:before, body#complementary .complement .darker:after { color: #ddd; }
+body#complementary .complement .darker:before { content: "#475226"; }
+body#complementary .complement .darker:after { content: "darker_complement_color"; font-size: smaller; }
+body#complementary .complement .dark { background-color: #6b7a3a; }
+body#complementary .complement .dark:before, body#complementary .complement .dark:after { color: black; }
+body#complementary .complement .dark:before { content: "#6b7a3a"; }
+body#complementary .complement .dark:after { content: "dark_complement_color"; font-size: smaller; }
+body#complementary .complement .normal { background-color: #8fa34d; }
+body#complementary .complement .normal:before, body#complementary .complement .normal:after { color: black; }
+body#complementary .complement .normal:before { content: "#8fa34d"; }
+body#complementary .complement .normal:after { content: "complement_color"; font-size: smaller; }
+body#complementary .complement .light { background-color: #adbe75; }
+body#complementary .complement .light:before, body#complementary .complement .light:after { color: black; }
+body#complementary .complement .light:before { content: "#adbe75"; }
+body#complementary .complement .light:after { content: "light_complement_color"; font-size: smaller; }
+body#complementary .complement .lighter { background-color: #c8d4a3; }
+body#complementary .complement .lighter:before, body#complementary .complement .lighter:after { color: black; }
+body#complementary .complement .lighter:before { content: "#c8d4a3"; }
+body#complementary .complement .lighter:after { content: "lighter_complement_color"; font-size: smaller; }
+body#complementary .complement .lightest { background-color: #e4e9d1; }
+body#complementary .complement .lightest:before, body#complementary .complement .lightest:after { color: black; }
+body#complementary .complement .lightest:before { content: "#e4e9d1"; }
+body#complementary .complement .lightest:after { content: "lightest_complement_color"; font-size: smaller; }

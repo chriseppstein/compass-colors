@@ -1,0 +1,93 @@
+html { height: 100%; }
+
+body#analogous { margin: 0; height: 100%; }
+body#analogous .base, body#analogous .support, body#analogous .accent { overflow: hidden; display: inline-block; height: 33%; }
+body#analogous .base, body#analogous .support, body#analogous .accent { display: block; }
+body#analogous .base div, body#analogous .support div, body#analogous .accent div { height: 100%; float: right; width: 13.271%; padding: 4px 0.5%; }
+body#analogous .base { background-color: #181329; }
+body#analogous .base .darkest { background-color: #181329; }
+body#analogous .base .darkest:before, body#analogous .base .darkest:after { color: #ddd; }
+body#analogous .base .darkest:before { content: "#181329"; }
+body#analogous .base .darkest:after { content: "darkest_base_color"; font-size: smaller; }
+body#analogous .base .darker { background-color: #302652; }
+body#analogous .base .darker:before, body#analogous .base .darker:after { color: #ddd; }
+body#analogous .base .darker:before { content: "#302652"; }
+body#analogous .base .darker:after { content: "darker_base_color"; font-size: smaller; }
+body#analogous .base .dark { background-color: #493a7a; }
+body#analogous .base .dark:before, body#analogous .base .dark:after { color: black; }
+body#analogous .base .dark:before { content: "#493a7a"; }
+body#analogous .base .dark:after { content: "dark_base_color"; font-size: smaller; }
+body#analogous .base .normal { background-color: #614da3; }
+body#analogous .base .normal:before, body#analogous .base .normal:after { color: black; }
+body#analogous .base .normal:before { content: "#614da3"; }
+body#analogous .base .normal:after { content: "base_color"; font-size: smaller; }
+body#analogous .base .light { background-color: #8675be; }
+body#analogous .base .light:before, body#analogous .base .light:after { color: black; }
+body#analogous .base .light:before { content: "#8675be"; }
+body#analogous .base .light:after { content: "light_base_color"; font-size: smaller; }
+body#analogous .base .lighter { background-color: #afa3d4; }
+body#analogous .base .lighter:before, body#analogous .base .lighter:after { color: black; }
+body#analogous .base .lighter:before { content: "#afa3d4"; }
+body#analogous .base .lighter:after { content: "lighter_base_color"; font-size: smaller; }
+body#analogous .base .lightest { background-color: #d7d1e9; }
+body#analogous .base .lightest:before, body#analogous .base .lightest:after { color: black; }
+body#analogous .base .lightest:before { content: "#d7d1e9"; }
+body#analogous .base .lightest:after { content: "lightest_base_color"; font-size: smaller; }
+body#analogous .support { background-color: #231329; }
+body#analogous .support .darkest { background-color: #231329; }
+body#analogous .support .darkest:before, body#analogous .support .darkest:after { color: #ddd; }
+body#analogous .support .darkest:before { content: "#231329"; }
+body#analogous .support .darkest:after { content: "darkest_support_color"; font-size: smaller; }
+body#analogous .support .darker { background-color: #462652; }
+body#analogous .support .darker:before, body#analogous .support .darker:after { color: #ddd; }
+body#analogous .support .darker:before { content: "#462652"; }
+body#analogous .support .darker:after { content: "darker_support_color"; font-size: smaller; }
+body#analogous .support .dark { background-color: #693a7a; }
+body#analogous .support .dark:before, body#analogous .support .dark:after { color: black; }
+body#analogous .support .dark:before { content: "#693a7a"; }
+body#analogous .support .dark:after { content: "dark_support_color"; font-size: smaller; }
+body#analogous .support .normal { background-color: #8c4da3; }
+body#analogous .support .normal:before, body#analogous .support .normal:after { color: black; }
+body#analogous .support .normal:before { content: "#8c4da3"; }
+body#analogous .support .normal:after { content: "support_color"; font-size: smaller; }
+body#analogous .support .light { background-color: #ab75be; }
+body#analogous .support .light:before, body#analogous .support .light:after { color: black; }
+body#analogous .support .light:before { content: "#ab75be"; }
+body#analogous .support .light:after { content: "light_support_color"; font-size: smaller; }
+body#analogous .support .lighter { background-color: #c7a3d4; }
+body#analogous .support .lighter:before, body#analogous .support .lighter:after { color: black; }
+body#analogous .support .lighter:before { content: "#c7a3d4"; }
+body#analogous .support .lighter:after { content: "lighter_support_color"; font-size: smaller; }
+body#analogous .support .lightest { background-color: #e3d1e9; }
+body#analogous .support .lightest:before, body#analogous .support .lightest:after { color: black; }
+body#analogous .support .lightest:before { content: "#e3d1e9"; }
+body#analogous .support .lightest:after { content: "lightest_support_color"; font-size: smaller; }
+body#analogous .accent { background-color: #131929; }
+body#analogous .accent .darkest { background-color: #131929; }
+body#analogous .accent .darkest:before, body#analogous .accent .darkest:after { color: #ddd; }
+body#analogous .accent .darkest:before { content: "#131929"; }
+body#analogous .accent .darkest:after { content: "darkest_accent_color"; font-size: smaller; }
+body#analogous .accent .darker { background-color: #263252; }
+body#analogous .accent .darker:before, body#analogous .accent .darker:after { color: #ddd; }
+body#analogous .accent .darker:before { content: "#263252"; }
+body#analogous .accent .darker:after { content: "darker_accent_color"; font-size: smaller; }
+body#analogous .accent .dark { background-color: #3a4b7a; }
+body#analogous .accent .dark:before, body#analogous .accent .dark:after { color: black; }
+body#analogous .accent .dark:before { content: "#3a4b7a"; }
+body#analogous .accent .dark:after { content: "dark_accent_color"; font-size: smaller; }
+body#analogous .accent .normal { background-color: #4d64a3; }
+body#analogous .accent .normal:before, body#analogous .accent .normal:after { color: black; }
+body#analogous .accent .normal:before { content: "#4d64a3"; }
+body#analogous .accent .normal:after { content: "accent_color"; font-size: smaller; }
+body#analogous .accent .light { background-color: #7589be; }
+body#analogous .accent .light:before, body#analogous .accent .light:after { color: black; }
+body#analogous .accent .light:before { content: "#7589be"; }
+body#analogous .accent .light:after { content: "light_accent_color"; font-size: smaller; }
+body#analogous .accent .lighter { background-color: #a3b0d4; }
+body#analogous .accent .lighter:before, body#analogous .accent .lighter:after { color: black; }
+body#analogous .accent .lighter:before { content: "#a3b0d4"; }
+body#analogous .accent .lighter:after { content: "lighter_accent_color"; font-size: smaller; }
+body#analogous .accent .lightest { background-color: #d1d8e9; }
+body#analogous .accent .lightest:before, body#analogous .accent .lightest:after { color: black; }
+body#analogous .accent .lightest:before { content: "#d1d8e9"; }
+body#analogous .accent .lightest:after { content: "lightest_accent_color"; font-size: smaller; }

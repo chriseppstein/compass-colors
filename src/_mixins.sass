@@ -1,0 +1,42 @@
+=annotate(!color, !name)
+  &:before, &:after
+    @if luminosity(!color) < 30
+      :color #ddd
+    @else
+      :color black
+  &:before
+    :content "#{!color}"
+  &:after
+    :content "#{!name}_color"
+    :font-size smaller
+
+=gradient(!color, !name)
+  !darkest = darken(!color, 75%)
+  !text_color = adjust_hue(!color, -180)
+  :background-color = !darkest
+  .darkest
+    :background-color = !darkest
+    +annotate(!darkest, "darkest_#{!name}")
+  .darker
+    !darker = darken(!color, 50%)
+    :background-color = !darker
+    +annotate(!darker, "darker_#{!name}")
+  .dark
+    !dark = darken(!color, 25%)
+    :background-color = !dark
+    +annotate(!dark, "dark_#{!name}")
+  .normal
+    :background-color = !color
+    +annotate(!color, !name)
+  .light
+    !light = lighten(!color, 25%)
+    :background-color = !light
+    +annotate(!light, "light_#{!name}")
+  .lighter
+    !lighter = lighten(!color, 50%)
+    :background-color = !lighter
+    +annotate(!lighter, "lighter_#{!name}")
+  .lightest
+    !lightest = lighten(!color, 75%)
+    :background-color = !lightest
+    +annotate(!lightest, "lightest_#{!name}")

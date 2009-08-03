@@ -2,7 +2,7 @@
 // In reality, these values should be adjusted to create a more pleasant color combination.
 // There is not any mathematical formula for this, but you can use the lighten, darken,
 // saturate and desaturate functions to adjust your main colors.
-!base_color = red
+!base_color ||= red
 !complementary_color = complement(!base_color)
 
 !base_dark_color     = darken(!base_color, 50)

@@ -1,0 +1,93 @@
+html { height: 100%; }
+
+body#triadic { margin: 0; height: 100%; }
+body#triadic .base, body#triadic .support, body#triadic .accent { overflow: hidden; display: inline-block; height: 33%; }
+body#triadic .base, body#triadic .support, body#triadic .accent { display: block; }
+body#triadic .base div, body#triadic .support div, body#triadic .accent div { height: 100%; float: right; width: 13.271%; padding: 4px 0.5%; }
+body#triadic .base { background-color: #181329; }
+body#triadic .base .darkest { background-color: #181329; }
+body#triadic .base .darkest:before, body#triadic .base .darkest:after { color: #ddd; }
+body#triadic .base .darkest:before { content: "#181329"; }
+body#triadic .base .darkest:after { content: "darkest_base_color"; font-size: smaller; }
+body#triadic .base .darker { background-color: #302652; }
+body#triadic .base .darker:before, body#triadic .base .darker:after { color: #ddd; }
+body#triadic .base .darker:before { content: "#302652"; }
+body#triadic .base .darker:after { content: "darker_base_color"; font-size: smaller; }
+body#triadic .base .dark { background-color: #493a7a; }
+body#triadic .base .dark:before, body#triadic .base .dark:after { color: black; }
+body#triadic .base .dark:before { content: "#493a7a"; }
+body#triadic .base .dark:after { content: "dark_base_color"; font-size: smaller; }
+body#triadic .base .normal { background-color: #614da3; }
+body#triadic .base .normal:before, body#triadic .base .normal:after { color: black; }
+body#triadic .base .normal:before { content: "#614da3"; }
+body#triadic .base .normal:after { content: "base_color"; font-size: smaller; }
+body#triadic .base .light { background-color: #8675be; }
+body#triadic .base .light:before, body#triadic .base .light:after { color: black; }
+body#triadic .base .light:before { content: "#8675be"; }
+body#triadic .base .light:after { content: "light_base_color"; font-size: smaller; }
+body#triadic .base .lighter { background-color: #afa3d4; }
+body#triadic .base .lighter:before, body#triadic .base .lighter:after { color: black; }
+body#triadic .base .lighter:before { content: "#afa3d4"; }
+body#triadic .base .lighter:after { content: "lighter_base_color"; font-size: smaller; }
+body#triadic .base .lightest { background-color: #d7d1e9; }
+body#triadic .base .lightest:before, body#triadic .base .lightest:after { color: black; }
+body#triadic .base .lightest:before { content: "#d7d1e9"; }
+body#triadic .base .lightest:after { content: "lightest_base_color"; font-size: smaller; }
+body#triadic .support { background-color: #291813; }
+body#triadic .support .darkest { background-color: #291813; }
+body#triadic .support .darkest:before, body#triadic .support .darkest:after { color: #ddd; }
+body#triadic .support .darkest:before { content: "#291813"; }
+body#triadic .support .darkest:after { content: "darkest_support_color"; font-size: smaller; }
+body#triadic .support .darker { background-color: #523026; }
+body#triadic .support .darker:before, body#triadic .support .darker:after { color: #ddd; }
+body#triadic .support .darker:before { content: "#523026"; }
+body#triadic .support .darker:after { content: "darker_support_color"; font-size: smaller; }
+body#triadic .support .dark { background-color: #7a493a; }
+body#triadic .support .dark:before, body#triadic .support .dark:after { color: black; }
+body#triadic .support .dark:before { content: "#7a493a"; }
+body#triadic .support .dark:after { content: "dark_support_color"; font-size: smaller; }
+body#triadic .support .normal { background-color: #a3614d; }
+body#triadic .support .normal:before, body#triadic .support .normal:after { color: black; }
+body#triadic .support .normal:before { content: "#a3614d"; }
+body#triadic .support .normal:after { content: "support_color"; font-size: smaller; }
+body#triadic .support .light { background-color: #be8675; }
+body#triadic .support .light:before, body#triadic .support .light:after { color: black; }
+body#triadic .support .light:before { content: "#be8675"; }
+body#triadic .support .light:after { content: "light_support_color"; font-size: smaller; }
+body#triadic .support .lighter { background-color: #d4afa3; }
+body#triadic .support .lighter:before, body#triadic .support .lighter:after { color: black; }
+body#triadic .support .lighter:before { content: "#d4afa3"; }
+body#triadic .support .lighter:after { content: "lighter_support_color"; font-size: smaller; }
+body#triadic .support .lightest { background-color: #e9d7d1; }
+body#triadic .support .lightest:before, body#triadic .support .lightest:after { color: black; }
+body#triadic .support .lightest:before { content: "#e9d7d1"; }
+body#triadic .support .lightest:after { content: "lightest_support_color"; font-size: smaller; }
+body#triadic .accent { background-color: #132918; }
+body#triadic .accent .darkest { background-color: #132918; }
+body#triadic .accent .darkest:before, body#triadic .accent .darkest:after { color: #ddd; }
+body#triadic .accent .darkest:before { content: "#132918"; }
+body#triadic .accent .darkest:after { content: "darkest_accent_color"; font-size: smaller; }
+body#triadic .accent .darker { background-color: #265231; }
+body#triadic .accent .darker:before, body#triadic .accent .darker:after { color: #ddd; }
+body#triadic .accent .darker:before { content: "#265231"; }
+body#triadic .accent .darker:after { content: "darker_accent_color"; font-size: smaller; }
+body#triadic .accent .dark { background-color: #3a7a49; }
+body#triadic .accent .dark:before, body#triadic .accent .dark:after { color: black; }
+body#triadic .accent .dark:before { content: "#3a7a49"; }
+body#triadic .accent .dark:after { content: "dark_accent_color"; font-size: smaller; }
+body#triadic .accent .normal { background-color: #4da361; }
+body#triadic .accent .normal:before, body#triadic .accent .normal:after { color: black; }
+body#triadic .accent .normal:before { content: "#4da361"; }
+body#triadic .accent .normal:after { content: "accent_color"; font-size: smaller; }
+body#triadic .accent .light { background-color: #75be86; }
+body#triadic .accent .light:before, body#triadic .accent .light:after { color: black; }
+body#triadic .accent .light:before { content: "#75be86"; }
+body#triadic .accent .light:after { content: "light_accent_color"; font-size: smaller; }
+body#triadic .accent .lighter { background-color: #a3d4af; }
+body#triadic .accent .lighter:before, body#triadic .accent .lighter:after { color: black; }
+body#triadic .accent .lighter:before { content: "#a3d4af"; }
+body#triadic .accent .lighter:after { content: "lighter_accent_color"; font-size: smaller; }
+body#triadic .accent .lightest { background-color: #d1e9d7; }
+body#triadic .accent .lightest:before, body#triadic .accent .lightest:after { color: black; }
+body#triadic .accent .lightest:before { content: "#d1e9d7"; }
+body#triadic .accent .lightest:after { content: "lightest_accent_color"; font-size: smaller; }

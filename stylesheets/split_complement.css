@@ -1,0 +1,93 @@
+html { height: 100%; }
+
+body#split-compliment { margin: 0; height: 100%; }
+body#split-compliment .base, body#split-compliment .complement-support, body#split-compliment .complement-accent { overflow: hidden; display: inline-block; height: 33%; }
+body#split-compliment .base, body#split-compliment .complement-support, body#split-compliment .complement-accent { display: block; }
+body#split-compliment .base div, body#split-compliment .complement-support div, body#split-compliment .complement-accent div { height: 100%; float: right; width: 13.271%; padding: 4px 0.5%; }
+body#split-compliment .base { background-color: #181329; }
+body#split-compliment .base .darkest { background-color: #181329; }
+body#split-compliment .base .darkest:before, body#split-compliment .base .darkest:after { color: #ddd; }
+body#split-compliment .base .darkest:before { content: "#181329"; }
+body#split-compliment .base .darkest:after { content: "darkest_base_color"; font-size: smaller; }
+body#split-compliment .base .darker { background-color: #302652; }
+body#split-compliment .base .darker:before, body#split-compliment .base .darker:after { color: #ddd; }
+body#split-compliment .base .darker:before { content: "#302652"; }
+body#split-compliment .base .darker:after { content: "darker_base_color"; font-size: smaller; }
+body#split-compliment .base .dark { background-color: #493a7a; }
+body#split-compliment .base .dark:before, body#split-compliment .base .dark:after { color: black; }
+body#split-compliment .base .dark:before { content: "#493a7a"; }
+body#split-compliment .base .dark:after { content: "dark_base_color"; font-size: smaller; }
+body#split-compliment .base .normal { background-color: #614da3; }
+body#split-compliment .base .normal:before, body#split-compliment .base .normal:after { color: black; }
+body#split-compliment .base .normal:before { content: "#614da3"; }
+body#split-compliment .base .normal:after { content: "base_color"; font-size: smaller; }
+body#split-compliment .base .light { background-color: #8675be; }
+body#split-compliment .base .light:before, body#split-compliment .base .light:after { color: black; }
+body#split-compliment .base .light:before { content: "#8675be"; }
+body#split-compliment .base .light:after { content: "light_base_color"; font-size: smaller; }
+body#split-compliment .base .lighter { background-color: #afa3d4; }
+body#split-compliment .base .lighter:before, body#split-compliment .base .lighter:after { color: black; }
+body#split-compliment .base .lighter:before { content: "#afa3d4"; }
+body#split-compliment .base .lighter:after { content: "lighter_base_color"; font-size: smaller; }
+body#split-compliment .base .lightest { background-color: #d7d1e9; }
+body#split-compliment .base .lightest:before, body#split-compliment .base .lightest:after { color: black; }
+body#split-compliment .base .lightest:before { content: "#d7d1e9"; }
+body#split-compliment .base .lightest:after { content: "lightest_base_color"; font-size: smaller; }
+body#split-compliment .complement-support { background-color: #192913; }
+body#split-compliment .complement-support .darkest { background-color: #192913; }
+body#split-compliment .complement-support .darkest:before, body#split-compliment .complement-support .darkest:after { color: #ddd; }
+body#split-compliment .complement-support .darkest:before { content: "#192913"; }
+body#split-compliment .complement-support .darkest:after { content: "darkest_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .darker { background-color: #325226; }
+body#split-compliment .complement-support .darker:before, body#split-compliment .complement-support .darker:after { color: #ddd; }
+body#split-compliment .complement-support .darker:before { content: "#325226"; }
+body#split-compliment .complement-support .darker:after { content: "darker_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .dark { background-color: #4b7a3a; }
+body#split-compliment .complement-support .dark:before, body#split-compliment .complement-support .dark:after { color: black; }
+body#split-compliment .complement-support .dark:before { content: "#4b7a3a"; }
+body#split-compliment .complement-support .dark:after { content: "dark_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .normal { background-color: #64a34d; }
+body#split-compliment .complement-support .normal:before, body#split-compliment .complement-support .normal:after { color: black; }
+body#split-compliment .complement-support .normal:before { content: "#64a34d"; }
+body#split-compliment .complement-support .normal:after { content: "complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .light { background-color: #89be75; }
+body#split-compliment .complement-support .light:before, body#split-compliment .complement-support .light:after { color: black; }
+body#split-compliment .complement-support .light:before { content: "#89be75"; }
+body#split-compliment .complement-support .light:after { content: "light_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .lighter { background-color: #b0d4a3; }
+body#split-compliment .complement-support .lighter:before, body#split-compliment .complement-support .lighter:after { color: black; }
+body#split-compliment .complement-support .lighter:before { content: "#b0d4a3"; }
+body#split-compliment .complement-support .lighter:after { content: "lighter_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-support .lightest { background-color: #d8e9d1; }
+body#split-compliment .complement-support .lightest:before, body#split-compliment .complement-support .lightest:after { color: black; }
+body#split-compliment .complement-support .lightest:before { content: "#d8e9d1"; }
+body#split-compliment .complement-support .lightest:after { content: "lightest_complement_support_color"; font-size: smaller; }
+body#split-compliment .complement-accent { background-color: #292313; }
+body#split-compliment .complement-accent .darkest { background-color: #292313; }
+body#split-compliment .complement-accent .darkest:before, body#split-compliment .complement-accent .darkest:after { color: #ddd; }
+body#split-compliment .complement-accent .darkest:before { content: "#292313"; }
+body#split-compliment .complement-accent .darkest:after { content: "darkest_complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .darker { background-color: #524626; }
+body#split-compliment .complement-accent .darker:before, body#split-compliment .complement-accent .darker:after { color: #ddd; }
+body#split-compliment .complement-accent .darker:before { content: "#524626"; }
+body#split-compliment .complement-accent .darker:after { content: "darker_complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .dark { background-color: #7a693a; }
+body#split-compliment .complement-accent .dark:before, body#split-compliment .complement-accent .dark:after { color: black; }
+body#split-compliment .complement-accent .dark:before { content: "#7a693a"; }
+body#split-compliment .complement-accent .dark:after { content: "dark_complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .normal { background-color: #a38c4d; }
+body#split-compliment .complement-accent .normal:before, body#split-compliment .complement-accent .normal:after { color: black; }
+body#split-compliment .complement-accent .normal:before { content: "#a38c4d"; }
+body#split-compliment .complement-accent .normal:after { content: "complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .light { background-color: #beab75; }
+body#split-compliment .complement-accent .light:before, body#split-compliment .complement-accent .light:after { color: black; }
+body#split-compliment .complement-accent .light:before { content: "#beab75"; }
+body#split-compliment .complement-accent .light:after { content: "light_complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .lighter { background-color: #d4c7a3; }
+body#split-compliment .complement-accent .lighter:before, body#split-compliment .complement-accent .lighter:after { color: black; }
+body#split-compliment .complement-accent .lighter:before { content: "#d4c7a3"; }
+body#split-compliment .complement-accent .lighter:after { content: "lighter_complement_accent_color"; font-size: smaller; }
+body#split-compliment .complement-accent .lightest { background-color: #e9e3d1; }
+body#split-compliment .complement-accent .lightest:before, body#split-compliment .complement-accent .lightest:after { color: black; }
+body#split-compliment .complement-accent .lightest:before { content: "#e9e3d1"; }
+body#split-compliment .complement-accent .lightest:after { content: "lightest_complement_accent_color"; font-size: smaller; }
