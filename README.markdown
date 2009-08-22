@@ -29,7 +29,7 @@ With all of these themes, you must pick a base color and the theme takes it from
 * Basic/Monochromatic (basic)
 * Complementary (complementary)
 * Triadic (triadic)
-* Split Complementary (split_complementary)
+* Split Complementary (split_complement)
 * Analogous (analogous)
 
 Sass Functions Provided
