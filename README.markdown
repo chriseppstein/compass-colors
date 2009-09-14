@@ -37,8 +37,8 @@ Sass Functions Provided
 
 * `lighten(color, percentage)` - Create a color lighter by the percent amount provided.
 * `darken(color, percentage)`  - Create a color darker by the percent amount provided.
-* `saturate(color, percentage)` - Create a color lighter by the percent amount provided.
-* `desaturate(color, percentage)` - Create a color lighter by the percent amount provided.
+* `saturate(color, percentage)` - Increase the saturation of a color by the percent amount provided.
+* `desaturate(color, percentage)` - Decrease the saturation of a color by the percent amount provided.
 * `hue(color)` - Extract the hue from the color in degrees (0-360). Suitable to be passed as the first argument of hsl.
 * `saturation(color)` - Extract the saturation from the color in percent (0-100). Suitable to be passed as the second argument of hsl.
 * `luminosity(color)` - Extract the luminosity from the color in percent (0-100). Suitable to be passed as the third argument of hsl.
