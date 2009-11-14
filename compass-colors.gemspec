@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compass-colors}
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Eppstein"]
-  s.date = %q{2009-10-20}
+  s.date = %q{2009-11-14}
   s.description = %q{Sass Extensions and color theme templates to make working with colors easier and more maintainable.}
   s.email = %q{chris@eppsteins.net}
   s.extra_rdoc_files = [
@@ -40,7 +40,6 @@ Gem::Specification.new do |s|
      "templates/triadic/_theme.sass",
      "templates/triadic/manifest.rb"
   ]
-  s.has_rdoc = false
   s.homepage = %q{http://compass-style.org}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
