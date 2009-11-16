@@ -4,44 +4,56 @@ module Sass::Script::Functions
   # Takes a color object and amount by which to lighten it (0 to 100).
   def lighten(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    if percentage?(amount)
-      hsl.l += (1 - hsl.l) * (amount.value / 100.0)
-    else
-      hsl.l += amount.value
-    end
+    hsl.l += amount.value / 100.0
+    hsl.to_color
+  end
+
+  # Takes a color object and percent by which to lighten it (0 to 100).
+  def lighten_percent(color, amount)
+    hsl = Compass::Colors::HSL.from_color(color)
+    hsl.l += (1 - hsl.l) * (amount.value / 100.0)
     hsl.to_color
   end
 
   # Takes a color object and amount by which to darken it (0 to 100).
   def darken(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    if percentage?(amount)
-      hsl.l *= 1.0 - (amount.value / 100.0)
-    else
-      hsl.l -= amount.value
-    end
+    hsl.l -= amount.value / 100.0
+    hsl.to_color
+  end
+
+  # Takes a color object and percent by which to darken it (0 to 100).
+  def darken_percent(color, amount)
+    hsl = Compass::Colors::HSL.from_color(color)
+    hsl.l *= 1.0 - (amount.value / 100.0)
     hsl.to_color
   end
 
   # Saturate (make a color "richer") a color by the given amount (0 to 100)
   def saturate(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    if percentage?(amount)
-      hsl.s += (1 - hsl.s) * (amount.value / 100.0)
-    else
-      hsl.s += amount.value
-    end
+    hsl.s += amount.value / 100.0
+    hsl.to_color
+  end
+
+  # Saturate (make a color "richer") a color by the given percent (0 to 100)
+  def saturate_percent(color, amount)
+    hsl = Compass::Colors::HSL.from_color(color)
+    hsl.s += (1 - hsl.s) * (amount.value / 100.0)
     hsl.to_color
   end
 
   # Desaturate (make a color "grayer") a color by the given amount (0 to 100)
   def desaturate(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
-    if percentage?(amount)
-      hsl.s *= (1.0 - (amount.value / 100.0))
-    else
-      hsl.s -= amount.value
-    end
+    hsl.s -= amount.value / 100.0
+    hsl.to_color
+  end
+
+  # Desaturate (make a color "grayer") a color by the given percent (0 to 100)
+  def desaturate_percent(color, amount)
+    hsl = Compass::Colors::HSL.from_color(color)
+    hsl.s *= (1.0 - (amount.value / 100.0))
     hsl.to_color
   end
 
@@ -84,12 +96,6 @@ module Sass::Script::Functions
 
   def complement(color)
     adjust_hue color, 180
-  end
-
-  private
-
-  def percentage?(amount)
-    amount.numerator_units == ["%"] || (amount.unitless? && amount.value > 1 && amount.value < 100)
   end
 
 end

@@ -10,12 +10,22 @@ require 'compass-colors'
 
 describe "sass extensions" do
   it "should lighten red into pink" do
-    pink = invoke(:lighten, color(255,0,0), number(50))
+    pink = invoke(:lighten, color(255,0,0), number(25))
+    pink.should be_approximately_the_same_color_as(color(255,127,127))
+  end
+
+  it "should lighten red into pink (percentage)" do
+    pink = invoke(:percent_lighten, color(255,0,0), number(50))
     pink.should be_approximately_the_same_color_as(color(255,127,127))
   end
 
   it "should darken red into maroon" do
-    maroon = invoke(:darken, color(255,0,0), number(50))
+    maroon = invoke(:darken, color(255,0,0), number(25))
+    maroon.should be_approximately_the_same_color_as(color(127,0,0))
+  end
+
+  it "should darken red into maroon (percentage)" do
+    maroon = invoke(:percent_darken, color(255,0,0), number(50))
     maroon.should be_approximately_the_same_color_as(color(127,0,0))
   end
 
