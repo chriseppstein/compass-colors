@@ -71,6 +71,7 @@ module Sass::Script::Functions
   def luminosity(color)
     Sass::Script::Number.new((Compass::Colors::HSL.from_color(color).l * 100).round)
   end
+  alias lightness luminosity
 
   # Mixes two colors by some amount (0 to 100). Defaults to 50.
   def mix(color1, color2, amount = nil)
