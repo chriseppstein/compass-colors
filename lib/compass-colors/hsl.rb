@@ -8,7 +8,7 @@ module Compass
       attr_reader :s, :l
 
       def self.from_color(color)
-        from_rgb(*color.value)
+        from_rgb(*color.rgb)
       end
 
       def self.from_rgb(r, g, b)

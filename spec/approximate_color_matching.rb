@@ -6,7 +6,7 @@ module BeApproximatelyTheSameColorAsMatcher
 
     def matches?(target)
       @target = target
-      @target.value.zip(@expected.value).all?{|e,t| (e-t).abs <= 1}
+      @target.rgb.zip(@expected.rgb).all?{|e,t| (e-t).abs <= 1}
     end
 
     def failure_message
