@@ -1,6 +1,16 @@
 require 'sass'
 
 module Sass::Script::Functions
+  module Colors
+    extend self
+    def rgb_value(color)
+      if color.respond_to?(:rgb)
+        color.rgb
+      else
+        color.value
+      end
+    end
+  end
   # Takes a color object and amount by which to lighten it (0 to 100).
   def lighten(color, amount)
     hsl = Compass::Colors::HSL.from_color(color)
@@ -76,7 +86,7 @@ module Sass::Script::Functions
   # Mixes two colors by some amount (0 to 100). Defaults to 50.
   def mix(color1, color2, amount = nil)
     percent = amount ? amount.value.round / 100.0 : 0.5
-    new_colors = color1.rgb.zip(color2.rgb).map{|c1, c2| (c1 * percent) + (c2 * (1 - percent))}
+    new_colors = Colors.rgb_value(color1).zip(Colors.rgb_value(color2)).map{|c1, c2| (c1 * percent) + (c2 * (1 - percent))}
     Sass::Script::Color.new(new_colors)
   end
 
