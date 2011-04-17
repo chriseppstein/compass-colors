@@ -25,7 +25,7 @@ module BeApproximatelyTheSameColorAsMatcher
       if value.nil?
         'nil'
       end
-
+      value.options = {}
       # join arrays
       if value.class == Array
         return value.join(", ")
