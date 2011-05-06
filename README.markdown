@@ -15,7 +15,10 @@ To install a theme into your existing compass project, add the following to your
 
 Then run this command:
 
-    compass -f colors -p <Theme Name>
+    compass install colors/<Theme Name>
+
+Where `<Theme Name>` is one of: `basic`, `complementary`, `triadic`, `split_complement`, `analogous`
+
 
 The _theme.sass partial can then be imported into your stylesheets and the color constants can be used.
 
