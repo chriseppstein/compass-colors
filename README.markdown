@@ -6,7 +6,7 @@ This compass extension provides support for working with colors in Sass and gene
 Installing
 ==========
 
-    sudo gem install chriseppstein-compass-colors
+    sudo gem install compass-colors
 
 
 To install a theme into your existing compass project, add the following to your compass configuration file:
