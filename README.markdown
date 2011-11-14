@@ -19,19 +19,19 @@ Then run this command:
 
 Where `<Theme Name>` is one of: `basic`, `complementary`, `triadic`, `split_complement`, `analogous`
 
-
-The _theme.sass partial can then be imported into your stylesheets and the color constants can be used.
-
-    @import theme.sass
-    
-Set your base color:
+Set your base color (before you import the theme file):
 
     $base_color: green   
 
-Then, using the Basic theme as an example, you will have access to color constants like these:
+The _theme.sass partial, using your declared `<$base_color>` can then be imported into your stylesheets,  and the color constants can be used.
+
+    @import theme.sass
+    
+Using the Basic theme as an example, you will have access to color constants like these:
 
     $complement_support_color
     $complement_accent_color
+    $dark_base_color
     
 Supported Color Themes
 ======================
